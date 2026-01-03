@@ -1,3 +1,9 @@
+<label>Choisissez un modèle de CV :</label>
+<select id="modele">
+    <option value="classique">Classique</option>
+    <option value="moderne">Moderne</option>
+    <option value="coloré">Coloré</option>
+</select>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -34,5 +40,86 @@
     <div id="resultat"></div>
 
     <script src="script.js"></script>
+</body>
+</html>
+<label>Photo (optionnelle)</label>
+<input type="file" id="photo" accept="image/*">
+<label>Langues</label>
+<input type="text" id="langues" placeholder="Ex: Français, Lingala, Anglais">
+
+<label>Éducation</label>
+<textarea id="education" placeholder="Ex: Lycée XYZ, Diplôme ABC"></textarea>
+
+<label>Expériences supplémentaires</label>
+<textarea id="experiencesup" placeholder="Si plusieurs emplois, séparez par des lignes"></textarea>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Créateur de CV gratuit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Créer ton CV gratuitement</h1>
+<p>Pour les personnes qui n'ont pas encore de CV</p>
+
+<!-- Choix modèle -->
+<label>Choisissez un modèle de CV :</label>
+<select id="modele">
+    <option value="classique">Classique</option>
+    <option value="moderne">Moderne</option>
+    <option value="colore">Coloré</option>
+</select>
+
+<!-- Formulaire -->
+<form id="cvForm">
+    <label>Nom complet</label>
+    <input type="text" id="nom" placeholder="Ex: Promesse Sunda" required>
+
+    <label>Téléphone</label>
+    <input type="text" id="telephone" placeholder="Ex: 099XXXXXXX" required>
+
+    <label>Adresse</label>
+    <input type="text" id="adresse" placeholder="Ex: Kinshasa / Ngaliema">
+
+    <label>Photo (optionnelle)</label>
+    <input type="file" id="photo" accept="image/*">
+
+    <label>Compétences</label>
+    <textarea id="competences" placeholder="Ex: Word, Internet, Montage vidéo"></textarea>
+
+    <label>Expérience</label>
+    <textarea id="experience" placeholder="Ex: Débutant / Stage / Aucun emploi"></textarea>
+
+    <label>Expériences supplémentaires</label>
+    <textarea id="experiencesup" placeholder="Si plusieurs emplois, séparez par des lignes"></textarea>
+
+    <label>Éducation</label>
+    <textarea id="education" placeholder="Ex: Lycée XYZ, Diplôme ABC"></textarea>
+
+    <label>Langues</label>
+    <input type="text" id="langues" placeholder="Ex: Français, Lingala, Anglais">
+
+    <button type="submit">Créer mon CV</button>
+</form>
+
+<hr>
+
+<div id="resultat"></div>
+
+<div style="text-align:center; margin-top:15px;">
+    <button onclick="telechargerPDF()">Télécharger le CV en PDF</button>
+</div>
+
+<div style="text-align:center; margin-top:15px;">
+    <a href="https://wa.me/243990000000" target="_blank">
+        <button style="background-color:#25D366;">Contact WhatsApp</button>
+    </a>
+</div>
+
+<!-- Librairie PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
