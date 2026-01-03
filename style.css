@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    background: white;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.cv {
+    background: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+}

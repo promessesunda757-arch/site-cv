@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Créateur de CV gratuit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Créer ton CV gratuitement</h1>
+    <p>Pour les personnes qui n'ont pas encore de CV</p>
+
+    <form id="cvForm">
+        <label>Nom complet</label>
+        <input type="text" id="nom" placeholder="Ex: Promesse Sunda" required>
+
+        <label>Téléphone</label>
+        <input type="text" id="telephone" placeholder="Ex: 099XXXXXXX" required>
+
+        <label>Adresse</label>
+        <input type="text" id="adresse" placeholder="Ex: Kinshasa / Ngaliema">
+
+        <label>Compétences</label>
+        <textarea id="competences" placeholder="Ex: Word, Internet, Montage vidéo"></textarea>
+
+        <label>Expérience</label>
+        <textarea id="experience" placeholder="Ex: Débutant / Stage / Aucun emploi"></textarea>
+
+        <button type="submit">Créer mon CV</button>
+    </form>
+
+    <hr>
+
+    <div id="resultat"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
